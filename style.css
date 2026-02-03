@@ -1,0 +1,167 @@
+:root {
+  --font-body: 'Barlow', sans-serif;
+  --font-heading: 'Fraunces', serif;
+
+  --fw-semibold: 600; 
+  --fw-bold: 700;    
+  --fw-black: 900;  
+
+  --fs-body: 18px;
+
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --green-graphic-800: hsl(167, 40%, 24%);
+  --blue-photography-800: hsl(198, 62%, 26%);
+  --green-footer-500: hsl(167, 57%, 73%);
+  --grey-950: hsl(212, 27%, 19%);
+  --grey-600: hsl(213, 9%, 39%);
+  --grey-550: hsl(232, 10%, 55%);
+  --grey-400: hsl(210, 4%, 67%);
+  --white: hsl(0, 100%, 100%);
+}
+
+body {
+  font-weight: var(--fw-black);
+  font-size: var(--fs-body);
+}
+
+p{
+  font-family: var(--font-body);
+  color: var(--grey-600);
+}
+
+h1, h2, h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-black); 
+}
+
+
+.header-text {
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: var(--fw-extra-bold);
+}
+
+.card-heading {
+  font-size: 2rem;
+  font-weight: var(--fw-extra-bold);
+}
+
+.card-text {
+  font-weight: var(--fw-regular);
+  font-size: 1.05rem;
+  color: var(--grey-550);
+}
+
+.card-graphic {
+  font-weight: var(--fw-extra-bold);
+  font-size: 1.75rem;
+  color: var(--green-graphic-800);
+}
+
+.card-graphic-text {
+  font-weight: var(--fw-bold);
+  color: var(--green-graphic-800);
+}
+
+.card-photo {
+  font-weight: var(--fw-extra-bold);
+  font-size: 1.75rem;
+  color: var(--blue-photography-800);
+}
+
+.card-photo-text {
+  font-weight: var(--fw-bold);
+  color: var(--blue-photography-800);
+}
+
+.client-title {
+  font-size: 1rem;
+  font-weight: var(--fw-extra-bold);
+  color: var(--grey-400);
+  letter-spacing: 0.25rem;
+}
+
+.client-text {
+  font-size: 1.025rem;
+  font-weight: var(--fw-bold);
+  line-height: 30px;
+}
+
+.client-name {
+  font-size: 1.25rem;
+  font-weight: var(--fw-extra-bold);
+}
+
+.client-role {
+  font-family: "Barlow";
+  font-size: 0.85rem;
+  font-weight: var(--fw-black);
+  color: var(--grey-400);
+}
+
+footer {
+  background-color: var(--green-footer-500);
+}
+
+.footer-logo {
+  font-size: 2.25rem;
+  color: var(--green-graphic-800);
+  opacity: 0.7;
+}
+
+.nav .footer-link {
+  color: var(--green-graphic-800);
+  font-family: "Barlow";
+  font-size: 1.15rem;
+  font-weight: var(--fw-bold);
+  opacity: 0.5;
+  /* filter: blur(2px); */
+}
+
+.nav .footer-link:hover {
+  color: var(--white);
+}
+
+.social-icon {
+  color: var(--green-graphic-800);
+  opacity: 0.7;
+}
+
+.social-icon:hover {
+  color: var(--white);
+}
+
+
+
+@media (min-width: 768px) { 
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .client-text {
+    font-size: 1rem;
+  }
+
+  .client-name {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-text {
+    font-size: 1.125rem;
+  }
+
+  .client-title {
+  font-size: 1.5rem;
+}
+
+  .client-name {
+    font-size: 1.25rem;
+  }
+
+  .client-role {
+    font-size: normal;
+  }
+}
